@@ -16,6 +16,9 @@ dependencies = [
 [project.scripts]
 emqx-mcp-server = "emqx_mcp_server:main"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/emqx_mcp_server"]
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
